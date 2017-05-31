@@ -54,6 +54,7 @@ def main():
 	else:
 		print("Gano",j2.nombre)
 main()
+dra.dragon()
 
 
         
