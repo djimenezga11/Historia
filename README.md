@@ -1,3 +1,3 @@
 # Historia
 
-Escribir un pequeño relato en el que el lector decida su destino final, tomando las decisiones que le sean oportunas en cada momento.
+Una batalla entre dos jugadores en la que el vencedor sera el que le intente robar el tesoro al dragón
