@@ -1,6 +1,5 @@
 import random
 import time
-import Dragon as d
 
 class Jugador(object):
     def __init__(self, nombre):
