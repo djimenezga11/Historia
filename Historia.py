@@ -76,7 +76,7 @@ class Golpear(object):
 		self.quita = 0
 		self.nombre = "Golpear"
 		
-	def devolverAtaque(self,origen):
+	def devAtaque(self,origen):
 		if origen.dano<5:
 			return 0
 		else:
@@ -112,22 +112,22 @@ def main():
 
         print("\nTURNO DE",j1.nombre)
         elec1 = j1.eleccion()
-        j2.vida -=  j1.habilidades[elec1].devolverAtaque(j1)
+        j2.vida -=  j1.habilidades[elec1].devAtaque(j1)
         print("Has usado ",j1.habilidades[elec1].nombre)
         print("Atacando...")
         time.sleep(1)
-        print("Daño",j1.habilidades[elec1].devolverAtaque(j1))
+        print("Daño",j1.habilidades[elec1].devAtaque(j1))
         time.sleep(0.5)
         if j1.vida<=0 and j2.vida<=0:
              break
 		     
         print("\nTurno de",j2.nombre)
         elec2 = j2.eleccion()
-        j1.vida -=  j2.habilidades[elec2].devolverAtaque(j2)
+        j1.vida -=  j2.habilidades[elec2].devAtaque(j2)
         print(j2.nombre,"ha usado ",j2.habilidades[elec2].nombre)
         print("Atacando...")
         time.sleep(1)
-        print("Daño",j2.habilidades[elec2].devolverAtaque(j2))
+        print("Daño",j2.habilidades[elec2].devAtaque(j2))
         time.sleep(2)
         if j1.vida<=0 or j2.vida<=0:
             break 
@@ -136,9 +136,7 @@ def main():
         else:
             print("Gana",j2.nombre)
 
-d.introduccion()
-NumCaverna = d.CambiarCueva
-d.cheqcueva(d.CambiarCueva)
+
         
             	
 main()
